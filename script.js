@@ -20,7 +20,8 @@ document.getElementById("processThruMiro").addEventListener("click", function()
         
         const boardWidth = board.offsetWidth;
 
-        createVisualPreview(crop, 10, 10, "#ffd966")
+        createVisualPreview(crop, 10, 10, "#ffd966");
+        createVisualPreview()
     });
 
 });
