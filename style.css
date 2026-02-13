@@ -1,0 +1,111 @@
+:root
+{
+    --miro-blue: #0500ff;
+    --grass-green: #2ecc71;
+    --bgcolor: #f0f2f5;
+}
+
+
+/*Css code is based on mobile mainly, due to farmers usually using mobile and not laptops*/
+body
+{
+    font-family: "Arial", "Inter",sans-serif;
+    background-color: var(--bgcolor);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba( 0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; 
+}
+
+section
+{
+    flex: 1;
+}
+
+textarea 
+{
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px; 
+    box-sizing: border-box;
+}
+
+button 
+{
+    width: 100%;
+    background-color: var(--miro-blue);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#virtualPreviewBoard
+{
+    background-color: #ffffff;
+    border: 2px dashed #ccc;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; 
+}
+
+@media(max-width: 768px) /* For tablets and/or smaller devices */
+{
+    .container
+    {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    body
+    {
+        align-items: flex start;
+    }
+
+    #virtualPreviewBoard
+    {
+        height: 250px;
+    }
+}
+
+.sticky-note 
+{
+    width: 80px;
+    height: 80px;
+    background-color: #ffd966;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    position: absolute;
+    animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn 
+{
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
