@@ -2,11 +2,11 @@
 
 const DATABASE = 
 [
-    { location: "Malolos Market", province: "bulacan", price: "20-25", unit: "PHP per kilogram", dist: "2 Km", keywords: ["rice", "palay", "corn", "mais"] },
-    { location: "Meycauayan Hub", province: "bulacan", price: "18-20", unit: "PHP per kilogram", dist: "3.6 Km", keywords: ["rice", "palay", "corn", "mais"] },
-    { location: "Manila Port", province: "manila", price: "28-30", unit: "PHP per kilogram", dist: "15 Km", keywords: ["rice", "palay", "corn", "mais"] },
-    { location: "Isabela Grain Ctr", province: "isabela", price: "15-18", unit: "PHP per kilogram", dist: "120 Km", keywords: ["rice", "palay", "corn", "mais"] },
-    { location: "Farm to Table PH HQ", province: "manila", price: "28-30", unit: "PHP per kilogram", dist: "Contact: 0917 515 5117", keywords: ["rice", "palay", "corn", "mais"] }
+    { location: "Malolos Market", province: "bulacan", price: "20-25 Php", unit: "per kilogram", dist: "2 Km", keywords: ["rice", "palay", "corn", "mais"] },
+    { location: "Meycauayan Hub", province: "bulacan", price: "18-20 Php", unit: "per kilogram", dist: "3.6 Km", keywords: ["rice", "palay", "corn", "mais"] },
+    { location: "Manila Port", province: "manila", price: "28-30 Php", unit: "per kilogram", dist: "15 Km", keywords: ["rice", "palay", "corn", "mais"] },
+    { location: "Isabela Grain Ctr", province: "isabela", price: "15-18 Php", unit: "per kilogram", dist: "120 Km", keywords: ["rice", "palay", "corn", "mais"] },
+    { location: "Farm to Table PH HQ", province: "manila", price: "28-30 Php", unit: "per kilogram", dist: "Contact: 0917 515 5117", keywords: ["rice", "palay", "corn", "mais"] }
 ];
 
 document.getElementById("searchBtn").addEventListener("click", function() {
