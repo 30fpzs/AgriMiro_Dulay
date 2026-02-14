@@ -43,7 +43,7 @@ document.getElementById("searchBtn").addEventListener("click", function() {
                 matches.forEach(match => {
                     let row = `<tr>
                         <td>${match.location}</td>
-                        <td>${match.price}<br><small>${match.unit}</small></td>
+                        <td>${match.price}<small>${match.unit}</small></td>
                         <td>${match.dist}</td>
                         </tr>`;
                     tableBody.innerHTML += row;
