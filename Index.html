@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AgriMiro Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <div class="search-container">
+        <h1>AgriMiro Market Finder</h1>
+        <p>Find the best price for your harvest instantly.</p>
 
-<body> <!--This is a very rough OUTLINE, a sort of diagram of what the final fully fledged website would look like with resources and time-->
-    
-<div class = "container">
-    <section class = "input-side">
-        <h2>AgriMiro Input</h2> <!--Basically, a glorified title page-->
-        <p class = "subtitle">Headless API Portal</p>
-
-        <textarea id = "farmerInput" placeholder = "Enter Harvest and Selling Interest Info (ex: 50kg of corn, Based in Bulacan and looking for buyers): "></textarea> <!--Text box for farmers to input the harvest and selling interest info-->
-
-        <button id = "processThruMiro"> Send and sync to Miro? </button> <!--Button to send the input data to Miro and sync it with the board-->
-
-        <div id = "statusMsg"> Standing by... </div> <!--Status message to the status of syncing to Miro-->
-    </section>
-
-    <section class = "Miro board-side">
-        <h3>Miro Canvas Preview</h3>
-        <div id="virtualPreviewBoard">
-            <p id = "placeholderText"> Miro board preview will be displayed here after syncing. </p> <!--Placeholder text for the Miro board preview, which will be replaced with the actual preview after syncing-->   
+        <div class="search-box">
+            <input type="text" id="searchBar" placeholder="I-type ang iyong Pananim at Lokasyon (hal., Palay sa Bulacan)">
+            <button id="searchBtn">Maghanap ng Mga Merkado?</button>
         </div>
-    </section>
 
-</div>
+        <p id="miroStatus" class="status-text"></p>
 
-<script src = "script.js"></script>
+        <div id="resultsSection" class="hidden">
+            <table>
+                <thead>
+                <tr>
+                    <th>LOCATION</th>
+                    <th>PRICE RANGE</th>
+                    <th>DISTANCE</th>
+                </tr>
+                </thead>
+                <tbody id="tableBody">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-<!--HELPPPP MEEEE IMM SOOO TIRED T^T-->

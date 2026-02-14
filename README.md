@@ -20,4 +20,6 @@ AgriMiro is not just for one farmer, but a Collaborative Ecosystem made for loca
 
 AgriMiro's mission is to support the Filipino farmers' business, so they no longer get treated unfairly by profit hungry corporations.
 
+This demo website I made is simply a visual representation of what can happen with the right tools and time.
+
 I hope I can make an impactfull change with my idea!
