@@ -2,11 +2,11 @@
 
 const DATABASE = 
 [
-    { location: "Malolos Market", province: "bulacan", price: "20-25 Php", unit: "per kilogram", dist: "2 Km", keywords: ["rice", "palay", "corn", "mais"] },
-    { location: "Meycauayan Hub", province: "bulacan", price: "18-20 Php", unit: "per kilogram", dist: "3.6 Km", keywords: ["rice", "palay", "corn", "mais"] },
-    { location: "Manila Port", province: "manila", price: "28-30 Php", unit: "per kilogram", dist: "15 Km", keywords: ["rice", "palay", "corn", "mais"] },
-    { location: "Isabela Grain Ctr", province: "isabela", price: "15-18 Php", unit: "per kilogram", dist: "120 Km", keywords: ["rice", "palay", "corn", "mais"] },
-    { location: "Farm to Table PH HQ", province: "manila", price: "28-30 Php", unit: "per kilogram", dist: "Contact: 0917 515 5117", keywords: ["rice", "palay", "corn", "mais"] }
+    { location: "Malolos Market", province: "bulacan", price: "20-25", unit: " Php per kilogram", dist: "2 Km", keywords: ["rice", "palay", "corn", "mais"] },
+    { location: "Meycauayan Hub", province: "bulacan", price: "18-20", unit: " Php per kilogram", dist: "3.6 Km", keywords: ["rice", "palay", "corn", "mais"] },
+    { location: "Manila Port", province: "manila", price: "28-30", unit: "Php per kilogram", dist: "15 Km", keywords: ["rice", "palay", "corn", "mais"] },
+    { location: "Isabela Grain Ctr", province: "isabela", price: "15-18", unit: "Php per kilogram", dist: "120 Km", keywords: ["rice", "palay", "corn", "mais"] },
+    { location: "Farm to Table PH HQ", province: "manila", price: "28-30", unit: " Php per kilogram", dist: "Contact: 0917 515 5117", keywords: ["rice", "palay", "corn", "mais"] }
 ];
 
 document.getElementById("searchBtn").addEventListener("click", function() {
@@ -43,7 +43,7 @@ document.getElementById("searchBtn").addEventListener("click", function() {
                 matches.forEach(match => {
                     let row = `<tr>
                         <td>${match.location}</td>
-                        <td>${match.price}<small>${match.unit}</small></td>
+                        <td>${match.price}<br><small>${match.unit}</small></td>
                         <td>${match.dist}</td>
                         </tr>`;
                     tableBody.innerHTML += row;
