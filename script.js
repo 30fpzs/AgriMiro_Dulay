@@ -31,10 +31,10 @@ document.getElementById("searchBtn").addEventListener("click", function() {
                 status.innerText = "Nakahanap ng mga resulta!";
 
                 const matches = DATABASE.filter(item =>
-                    input.includes(item.keywords[0]) || input.includes(item.keywords[1])
+                    input.includes(item.keywords[0]) && input.includes(item.keywords[1])
                 );
 
-                tableBody.innerHTMl ="";
+                tableBody.innerHTML ="";
 
                 if(matches.length > 0)
                 {
